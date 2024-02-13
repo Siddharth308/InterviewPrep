@@ -1,0 +1,14 @@
+1. How CDN works, why we use it
+2. Session storage vs Local storage vs Cookies
+    document.cookie = `name=Kyle; expires=${new Date(9999, 0, 1).toUTCString()}`
+    document.cookie = `lastName=Smith; expires=${new Date(
+    9999,
+    0,
+    1
+    ).toUTCString()}`
+
+    localStorage.removeItem("name")
+    .setItem(key, value)
+    .getItem(key)
+
+    sessionStorage.removeItem("name")
