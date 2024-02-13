@@ -1,0 +1,28 @@
+function State() {
+  const [rerenderCount, setRerenderCount] = useState(0)
+
+  useEffect(() => {
+    setRerenderCount(prevCount => prevCount + 1)
+  })
+
+  return <div>{rerenderCount}</div>
+}
+
+function Ref() {
+  const rerenderCount = useRef(0)
+
+  useEffect(() => {
+    rerenderCount.current = rerenderCount.current + 1
+  })
+
+  return <div>{rerenderCount.current}</div>
+}
+
+
+
+3. Library vs Framework
+2. React portals
+4. What can we import in js files in react, that won't work in JS.
+5. useMemo
+6. useCallback.
+7. Re

@@ -1,0 +1,54 @@
+// HTML
+
+
+
+
+
+
+
+// Javascript
+
+// Basics of Web
+
+
+----
+
+Shallow copy, Deep Copy, slice with nested obj, problems with JSON.stringify
+Flatten an array
+Implement debounce
+CSS Specificity
+CSS Positioning
+Make a center in another div
+Flex
+transform
+margin
+Hoisting
+setTimeOut + closure
+How browser works?
+How async code runs in browser
+SEO?
+What happens when you type google.com
+How CDN works, why we use it
+Polyfils of map, reduce
+arrow func vs normal func
+sessionStorage vs localStorage
+promises vs async await
+how to consume a promise obj
+Unique elements from an array of numbers
+TDZ - Temporal Dead Zone
+lexical env
+scope chain
+call, apply & bind 
+how to measure web performance? metrics of web performance
+How to do image optimizations
+function currying sum(2)(3)(4)......(n)
+critical rendering path
+async vs defer
+How to add a new function to JS arrays
+event delegation vs event propagation
+what is a block in JS
+parts of URL may be
+Difference between GET & POST
+ 
+SSO
+Authentication mechanisms: OAUTH2.0, JWT

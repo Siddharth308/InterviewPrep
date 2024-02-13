@@ -1,0 +1,4959 @@
+curl --location --request GET 'https://internal-sadc-stage.carbon.lowes.com/orbit-purchase-ship-api/shipment/purchase/239059827' \
+--header 'accept: application/json' \
+--header 'source-system: abc' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "sourceId": "1009011032313400312",
+    "cartId": "7052253390696028536",
+    "cartType": "SHOPPING",
+    "testOrder": false,
+    "identityId": "59b6d835-cc0d-4eb5-a359-aa7659b7f66f",
+    "identityType": "GUEST",
+    "customerSegments": [
+        "REGULAR"
+    ],
+    "tenantType": "LOWES",
+    "businessChannel": "DIGITAL_LOWESDESKTOP",
+    "channel": "online",
+    "users": [
+        {
+            "userType": "SHOPPER",
+            "poRequired": false,
+            "userTaxExemptOptIn": true,
+            "taxExempt": false,
+            "bestPrice": false,
+            "valPropEnabled": false
+        }
+    ],
+    "cartItems": [
+        {
+            "cartItemId": "16813884741699648708",
+            "omniItemId": "3026768",
+            "itemNumber": "232",
+            "model": "35109",
+            "vendor": "37672",
+            "brand": "Hillman",
+            "itemDescription": "#10 x 1-1/4-in Socket Hex-Drive Sheet Metal Screws (50-Count)",
+            "shortDescription": "BH HWH SMS 10X1 1/4 50CT",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.41,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 6.98,
+                "unitCost": 1.40,
+                "prices": [
+                    {
+                        "type": "FINAL",
+                        "value": 6.98
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 6.98
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.40
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 6.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T04:00:00Z",
+                "estimatedDeliveryDate": "2023-04-14T12:00:00Z",
+                "estimatedShipDate": "2023-04-14T04:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "7348"
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 7348,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "CDT",
+                        "availabilityDate": "2023-04-13T04:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/257c0d65-8c82-46c8-a14f-b5d98ccd18d6/00281544.jpg",
+            "cartItemSummary": {
+                "subTotal": 6.98,
+                "totalPrice": 7.69,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.71,
+                        "itemNbr": "232",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 6.98,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "CEMENT_BOARD_SCREWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413607~1",
+            "createdTime": "2023-04-13T12:21:14.169Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443276",
+                    "locationId": "7348",
+                    "itemNbr": "232",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "a814c526-4d9c-49d3-8171-c1599b8f6c72"
+                }
+            ],
+            "primeLineNo": 9,
+            "taxExemptions": [],
+            "itemHeightMeasure": "4.125",
+            "itemDepthMeasure": "1.25",
+            "itemWidthMeasure": "2.125",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138889444049490215",
+            "omniItemId": "1000126013",
+            "itemNumber": "790022",
+            "model": "KLC 2224A-03",
+            "vendor": "11241",
+            "brand": "Kobalt",
+            "itemDescription": "2-Tool 24-Volt Max Brushless Power Tool Combo Kit with Soft Case (1-Battery Included and Charger Included)",
+            "shortDescription": "K 24V BL 2-TOOL HMR DRL AND IMPA",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 12.885,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 279.00,
+                "unitCost": 181.79,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 181.79
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 279.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "3461",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 3461,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "ADC",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/0869ec3a-22e1-4726-8733-0de1a8d2fec8/07696108.jpg",
+            "cartItemSummary": {
+                "subTotal": 279.00,
+                "totalPrice": 307.61,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 28.61,
+                        "itemNbr": "790022",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 279.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "COMBO_KITS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:28:14.44Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": true,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637603",
+                    "locationId": "3461",
+                    "itemNbr": "790022",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "d20a8e41-75f1-47c2-967e-34512d9c548c"
+                }
+            ],
+            "primeLineNo": 26,
+            "taxExemptions": [],
+            "itemHeightMeasure": "10.43",
+            "itemDepthMeasure": "12.8",
+            "itemWidthMeasure": "10.14",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388513478312664899",
+            "omniItemId": "4762679",
+            "itemNumber": "498196",
+            "model": "85907210629",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Aquamarine Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS AQUAMRN POLKA DOT PILLOW RECT",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 28.48,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "BASE",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 28.48
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "49084",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.42,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.42,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/21c7551b-b6bd-474e-9d20-2c155889c321/02882877.jpg",
+            "cartItemSummary": {
+                "subTotal": 28.48,
+                "totalPrice": 29.84,
+                "discount": 1.42,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 2.78,
+                        "itemNbr": "498196",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 27.06,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.42,
+                "totalSavingsByUnit": 1.42,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:21:53.478Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637592",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "09ef42c1-f3d8-4c16-be86-978cfe2316b2",
+                    "modelID": "85907210629",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 13,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "16813884047848825325",
+            "omniItemId": "50342442",
+            "itemNumber": "657453",
+            "model": "657453",
+            "vendor": "33",
+            "brand": "Lowe'\''s",
+            "itemDescription": "22-in W x 21.5-in H x 22-in D Classic X-large Cardboard Moving Box with Handle Holes",
+            "shortDescription": "EXTRA LARGE BOX",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.76,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 2.78,
+                "unitCost": 1.99,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.99
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/1b52d722-38d1-4815-b3d7-6b37904028c6/04403202.jpg",
+            "cartItemSummary": {
+                "subTotal": 2.78,
+                "totalPrice": 3.06,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.28,
+                        "itemNbr": "657453",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 2.78,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "MOVING_BOXES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:20:04.784Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637595",
+                    "locationId": "6557",
+                    "itemNbr": "657453",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "55a63ae7-f56a-41c4-8bd7-63df043c2b8f"
+                }
+            ],
+            "primeLineNo": 4,
+            "taxExemptions": [],
+            "itemHeightMeasure": "45",
+            "itemDepthMeasure": "0.25",
+            "itemWidthMeasure": "44",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388389652428497794",
+            "omniItemId": "999960275",
+            "itemNumber": "757585",
+            "model": "30112L",
+            "vendor": "695",
+            "brand": "interDesign",
+            "itemDescription": "Plastic Freestanding Sink Caddy",
+            "shortDescription": "CLEAR SOAP SAVER",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.09,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 1.60,
+                "unitCost": 0.49,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.49
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 1.60
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "4317",
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 4317,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "DFC",
+                        "shipDate": "2023-04-14T01:30:00Z",
+                        "routingID": "FDXLEB",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/3be65259-9748-481a-91ec-dac72770349c/00615913.jpg",
+            "cartItemSummary": {
+                "subTotal": 1.60,
+                "totalPrice": 1.75,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.15,
+                        "itemNbr": "757585",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 1.60,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SINK_CADDIES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:19:49.652Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443280",
+                    "locationId": "4317",
+                    "itemNbr": "757585",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "0de37ba6-cf51-42a4-b55c-061baa3c819f"
+                }
+            ],
+            "primeLineNo": 3,
+            "taxExemptions": [],
+            "itemHeightMeasure": "6.3",
+            "itemDepthMeasure": "0.7",
+            "itemWidthMeasure": "3.2",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "16813889258721465839",
+            "omniItemId": "1000126013",
+            "itemNumber": "790022",
+            "model": "KLC 2224A-03",
+            "vendor": "11241",
+            "brand": "Kobalt",
+            "itemDescription": "2-Tool 24-Volt Max Brushless Power Tool Combo Kit with Soft Case (1-Battery Included and Charger Included)",
+            "shortDescription": "K 24V BL 2-TOOL HMR DRL AND IMPA",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 12.885,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 279.00,
+                "unitCost": 181.79,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 181.79
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 279.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "3461",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 3461,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "ADC",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/0869ec3a-22e1-4726-8733-0de1a8d2fec8/07696108.jpg",
+            "cartItemSummary": {
+                "subTotal": 279.00,
+                "totalPrice": 307.61,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 28.61,
+                        "itemNbr": "790022",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 279.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "COMBO_KITS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:28:45.872Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": true,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443284",
+                    "locationId": "3461",
+                    "itemNbr": "790022",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "d9fca445-7abf-4ada-aaed-1a8c054c8389"
+                }
+            ],
+            "primeLineNo": 27,
+            "taxExemptions": [],
+            "itemHeightMeasure": "10.43",
+            "itemDepthMeasure": "12.8",
+            "itemWidthMeasure": "10.14",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388684108662135885",
+            "omniItemId": "50107504",
+            "itemNumber": "133",
+            "model": "BP40T612RP",
+            "vendor": "75774",
+            "brand": "Feit Electric",
+            "itemDescription": "5.375-in T6.5 Soft White Dimmable Appliance",
+            "shortDescription": "FEIT 40 W T6 1/2 TUBE INTR MED BS",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "hazmatClassCode": "N",
+            "quantity": 1,
+            "itemWeight": 0.11,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 1,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 112.00,
+                "unitCost": 0.67,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.67
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 112.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/eb7affbb-6baa-4b15-bbfa-e5197fc0ed3d/00553177.jpg",
+            "cartItemSummary": {
+                "subTotal": 112.00,
+                "totalPrice": 123.48,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 11.48,
+                        "itemNbr": "133",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 112.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SPECIALTY_LIGHT_BULBS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:24:44.109Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443287",
+                    "locationId": "6557",
+                    "itemNbr": "133",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "7c0919c5-f52d-4846-949c-c47266b75db1"
+                }
+            ],
+            "primeLineNo": 21,
+            "taxExemptions": [],
+            "itemHeightMeasure": "18.1",
+            "itemDepthMeasure": "0.23",
+            "itemWidthMeasure": "11.45",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138867510984187387",
+            "omniItemId": "50107504",
+            "itemNumber": "133",
+            "model": "BP40T612RP",
+            "vendor": "75774",
+            "brand": "Feit Electric",
+            "itemDescription": "5.375-in T6.5 Soft White Dimmable Appliance",
+            "shortDescription": "FEIT 40 W T6 1/2 TUBE INTR MED BS",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "hazmatClassCode": "N",
+            "quantity": 1,
+            "itemWeight": 0.11,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 1,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 112.00,
+                "unitCost": 0.67,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.67
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 112.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/eb7affbb-6baa-4b15-bbfa-e5197fc0ed3d/00553177.jpg",
+            "cartItemSummary": {
+                "subTotal": 112.00,
+                "totalPrice": 123.48,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 11.48,
+                        "itemNbr": "133",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 112.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SPECIALTY_LIGHT_BULBS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:24:35.109Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637600",
+                    "locationId": "6557",
+                    "itemNbr": "133",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "9782357e-2070-41ff-9dd9-9edbe4a134fd"
+                }
+            ],
+            "primeLineNo": 20,
+            "taxExemptions": [],
+            "itemHeightMeasure": "18.1",
+            "itemDepthMeasure": "0.23",
+            "itemWidthMeasure": "11.45",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138885517202961493",
+            "omniItemId": "999960275",
+            "itemNumber": "757585",
+            "model": "30112L",
+            "vendor": "695",
+            "brand": "interDesign",
+            "itemDescription": "Plastic Freestanding Sink Caddy",
+            "shortDescription": "CLEAR SOAP SAVER",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.09,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 1.60,
+                "unitCost": 0.49,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.49
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 1.60
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "4317",
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 4317,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "DFC",
+                        "shipDate": "2023-04-14T01:30:00Z",
+                        "routingID": "FDXLEB",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/3be65259-9748-481a-91ec-dac72770349c/00615913.jpg",
+            "cartItemSummary": {
+                "subTotal": 1.60,
+                "totalPrice": 1.75,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.15,
+                        "itemNbr": "757585",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 1.60,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SINK_CADDIES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:27:35.173Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637597",
+                    "locationId": "4317",
+                    "itemNbr": "757585",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "cef8c88e-6867-468b-ba4d-d6a8e9e09d37"
+                }
+            ],
+            "primeLineNo": 25,
+            "taxExemptions": [],
+            "itemHeightMeasure": "6.3",
+            "itemDepthMeasure": "0.7",
+            "itemWidthMeasure": "3.2",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388522042003620723",
+            "omniItemId": "4762679",
+            "itemNumber": "498196",
+            "model": "85907210629",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Aquamarine Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS AQUAMRN POLKA DOT PILLOW RECT",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 28.48,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "BASE",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 28.48
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "49084",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.42,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.42,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/21c7551b-b6bd-474e-9d20-2c155889c321/02882877.jpg",
+            "cartItemSummary": {
+                "subTotal": 28.48,
+                "totalPrice": 29.84,
+                "discount": 1.42,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 2.78,
+                        "itemNbr": "498196",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 27.06,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.42,
+                "totalSavingsByUnit": 1.42,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:22:02.042Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443281",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "e26cba56-1fb1-414d-8421-37672c11a01f",
+                    "modelID": "85907210629",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 15,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138842776259366587",
+            "omniItemId": "4762637",
+            "itemNumber": "498163",
+            "model": "85907210630",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Ocean Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS Ocean Small Polka Dot Small P",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 31.98,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 31.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "49084",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.60,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.60,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/5208488d-3e92-489e-8bda-637d289b4419/02882900.jpg",
+            "cartItemSummary": {
+                "subTotal": 31.98,
+                "totalPrice": 33.49,
+                "discount": 1.60,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 3.11,
+                        "itemNbr": "498163",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 30.38,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.60,
+                "totalSavingsByUnit": 1.60,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:20:27.762Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637594",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "7f7a4658-cdb7-4545-aa55-855f3dcce1f1",
+                    "modelID": "85907210630",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 5,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138865052441203517",
+            "omniItemId": "5000270713",
+            "itemNumber": "178650",
+            "model": "W31558-PW-UC",
+            "vendor": "81227",
+            "brand": "Brainerd",
+            "itemDescription": "Wood Architectural 1-Gang Standard Toggle/Duplex Wall Plate, Pure White",
+            "shortDescription": "ARCH WOOD WHITE SINGLE DUPLEX",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.15,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 5.97,
+                "unitCost": 1.75,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.75
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 5.97
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/c7265276-7441-43bc-a0af-3a04b16d6387/18058240.jpg",
+            "cartItemSummary": {
+                "subTotal": 5.97,
+                "totalPrice": 6.58,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.61,
+                        "itemNbr": "178650",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 5.97,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ELECTRICAL_WALL_PLATES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:24:10.525Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584650248970",
+                    "locationId": "6557",
+                    "itemNbr": "178650",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "ba3c7da2-414e-4be1-ae38-266b5d16fec3"
+                }
+            ],
+            "primeLineNo": 18,
+            "taxExemptions": [],
+            "itemHeightMeasure": "9.2",
+            "itemDepthMeasure": "15.6",
+            "itemWidthMeasure": "0.275",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138845221714496743",
+            "omniItemId": "5000270713",
+            "itemNumber": "178650",
+            "model": "W31558-PW-UC",
+            "vendor": "81227",
+            "brand": "Brainerd",
+            "itemDescription": "Wood Architectural 1-Gang Standard Toggle/Duplex Wall Plate, Pure White",
+            "shortDescription": "ARCH WOOD WHITE SINGLE DUPLEX",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.15,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 5.97,
+                "unitCost": 1.75,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.75
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 5.97
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/c7265276-7441-43bc-a0af-3a04b16d6387/18058240.jpg",
+            "cartItemSummary": {
+                "subTotal": 5.97,
+                "totalPrice": 6.58,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.61,
+                        "itemNbr": "178650",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 5.97,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ELECTRICAL_WALL_PLATES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:20:52.217Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637602",
+                    "locationId": "6557",
+                    "itemNbr": "178650",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "93f44ffb-1a81-4dba-b31e-0efc4efa287c"
+                }
+            ],
+            "primeLineNo": 7,
+            "taxExemptions": [],
+            "itemHeightMeasure": "9.2",
+            "itemDepthMeasure": "15.6",
+            "itemWidthMeasure": "0.275",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138884826636557112",
+            "omniItemId": "999960275",
+            "itemNumber": "757585",
+            "model": "30112L",
+            "vendor": "695",
+            "brand": "interDesign",
+            "itemDescription": "Plastic Freestanding Sink Caddy",
+            "shortDescription": "CLEAR SOAP SAVER",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.09,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 1.60,
+                "unitCost": 0.49,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.49
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 1.60
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 4317,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "DFC",
+                        "shipDate": "2023-04-14T01:30:00Z",
+                        "routingID": "FDXLEB",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/3be65259-9748-481a-91ec-dac72770349c/00615913.jpg",
+            "cartItemSummary": {
+                "subTotal": 1.60,
+                "totalPrice": 1.75,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.15,
+                        "itemNbr": "757585",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 1.60,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SINK_CADDIES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:27:28.266Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443285",
+                    "locationId": "4317",
+                    "itemNbr": "757585",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "c8d97da8-4e26-4dbe-8c52-b4f06db45d0a"
+                }
+            ],
+            "primeLineNo": 24,
+            "taxExemptions": [],
+            "itemHeightMeasure": "6.3",
+            "itemDepthMeasure": "0.7",
+            "itemWidthMeasure": "3.2",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "16813885175785646988",
+            "omniItemId": "4762679",
+            "itemNumber": "498196",
+            "model": "85907210629",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Aquamarine Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS AQUAMRN POLKA DOT PILLOW RECT",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 28.48,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "BASE",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 28.48
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "49084",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.42,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.42,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/21c7551b-b6bd-474e-9d20-2c155889c321/02882877.jpg",
+            "cartItemSummary": {
+                "subTotal": 28.48,
+                "totalPrice": 29.84,
+                "discount": 1.42,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 2.78,
+                        "itemNbr": "498196",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 27.06,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.42,
+                "totalSavingsByUnit": 1.42,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:21:57.579Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637593",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "51f09c6c-ad74-46d4-aaf8-548d08383018",
+                    "modelID": "85907210629",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 14,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138823285977041782",
+            "omniItemId": "3034502",
+            "itemNumber": "51790",
+            "model": "491239",
+            "vendor": "37672",
+            "brand": "Hillman",
+            "itemDescription": "#14 x 1-3/4-in Silver Zinc-Plated Flat Interior/Exterior Wood Screws",
+            "shortDescription": "FH WS PH Z 14X1 3/4 3CT",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.05,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 1.18,
+                "unitCost": 0.35,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.35
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 1.18
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 1.18
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 1.18
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/c3bb47de-333d-49ae-a6c4-ac8b0905def5/00382251.jpg",
+            "cartItemSummary": {
+                "subTotal": 1.18,
+                "totalPrice": 1.31,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.13,
+                        "itemNbr": "51790",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 1.18,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "WOOD_SCREWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:17:12.859Z",
+            "interPackCode": "BG",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584662831908",
+                    "locationId": "6557",
+                    "itemNbr": "51790",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "64a3459b-e222-43cf-a065-c8cb2b85fc11"
+                }
+            ],
+            "primeLineNo": 1,
+            "taxExemptions": [],
+            "itemHeightMeasure": "5.75",
+            "itemDepthMeasure": "0.09",
+            "itemWidthMeasure": "2",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138848118521680",
+            "omniItemId": "3026768",
+            "itemNumber": "232",
+            "model": "35109",
+            "vendor": "37672",
+            "brand": "Hillman",
+            "itemDescription": "#10 x 1-1/4-in Socket Hex-Drive Sheet Metal Screws (50-Count)",
+            "shortDescription": "BH HWH SMS 10X1 1/4 50CT",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.41,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 6.98,
+                "unitCost": 1.40,
+                "prices": [
+                    {
+                        "type": "FINAL",
+                        "value": 6.98
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 6.98
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.40
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 6.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T04:00:00Z",
+                "estimatedDeliveryDate": "2023-04-14T12:00:00Z",
+                "estimatedShipDate": "2023-04-14T04:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "7348"
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 7348,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "CDT",
+                        "availabilityDate": "2023-04-13T04:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/257c0d65-8c82-46c8-a14f-b5d98ccd18d6/00281544.jpg",
+            "cartItemSummary": {
+                "subTotal": 6.98,
+                "totalPrice": 7.69,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.71,
+                        "itemNbr": "232",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 6.98,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "CEMENT_BOARD_SCREWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413607~1",
+            "createdTime": "2023-04-13T12:21:21.185Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443283",
+                    "locationId": "7348",
+                    "itemNbr": "232",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "6a0dcf1c-a125-42f0-8f62-35c70dd07f94"
+                }
+            ],
+            "primeLineNo": 10,
+            "taxExemptions": [],
+            "itemHeightMeasure": "4.125",
+            "itemDepthMeasure": "1.25",
+            "itemWidthMeasure": "2.125",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388775690826041148",
+            "omniItemId": "50342442",
+            "itemNumber": "657453",
+            "model": "657453",
+            "vendor": "33",
+            "brand": "Lowe'\''s",
+            "itemDescription": "22-in W x 21.5-in H x 22-in D Classic X-large Cardboard Moving Box with Handle Holes",
+            "shortDescription": "EXTRA LARGE BOX",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.76,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 2.78,
+                "unitCost": 1.99,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 2.78
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.99
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/1b52d722-38d1-4815-b3d7-6b37904028c6/04403202.jpg",
+            "cartItemSummary": {
+                "subTotal": 2.78,
+                "totalPrice": 3.06,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.28,
+                        "itemNbr": "657453",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 2.78,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "MOVING_BOXES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:26:15.69Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443286",
+                    "locationId": "6557",
+                    "itemNbr": "657453",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "234d1b24-6b7f-4e1c-92a7-9bb33bfd9648"
+                }
+            ],
+            "primeLineNo": 22,
+            "taxExemptions": [],
+            "itemHeightMeasure": "45",
+            "itemDepthMeasure": "0.25",
+            "itemWidthMeasure": "44",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138848905327085520",
+            "omniItemId": "50107504",
+            "itemNumber": "133",
+            "model": "BP40T612RP",
+            "vendor": "75774",
+            "brand": "Feit Electric",
+            "itemDescription": "5.375-in T6.5 Soft White Dimmable Appliance",
+            "shortDescription": "FEIT 40 W T6 1/2 TUBE INTR MED BS",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "hazmatClassCode": "N",
+            "quantity": 1,
+            "itemWeight": 0.11,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 1,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 112.00,
+                "unitCost": 0.67,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.67
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 112.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/eb7affbb-6baa-4b15-bbfa-e5197fc0ed3d/00553177.jpg",
+            "cartItemSummary": {
+                "subTotal": 112.00,
+                "totalPrice": 123.48,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 11.48,
+                        "itemNbr": "133",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 112.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SPECIALTY_LIGHT_BULBS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:21:29.053Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637596",
+                    "locationId": "6557",
+                    "itemNbr": "133",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "5bb31445-1697-4bf4-b0fc-146d5f114f60"
+                }
+            ],
+            "primeLineNo": 11,
+            "taxExemptions": [],
+            "itemHeightMeasure": "18.1",
+            "itemDepthMeasure": "0.23",
+            "itemWidthMeasure": "11.45",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388660976574955618",
+            "omniItemId": "5000270713",
+            "itemNumber": "178650",
+            "model": "W31558-PW-UC",
+            "vendor": "81227",
+            "brand": "Brainerd",
+            "itemDescription": "Wood Architectural 1-Gang Standard Toggle/Duplex Wall Plate, Pure White",
+            "shortDescription": "ARCH WOOD WHITE SINGLE DUPLEX",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.15,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 5.97,
+                "unitCost": 1.75,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 1.75
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 5.97
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 5.97
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/c7265276-7441-43bc-a0af-3a04b16d6387/18058240.jpg",
+            "cartItemSummary": {
+                "subTotal": 5.97,
+                "totalPrice": 6.58,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.61,
+                        "itemNbr": "178650",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 5.97,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ELECTRICAL_WALL_PLATES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:24:20.976Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637599",
+                    "locationId": "6557",
+                    "itemNbr": "178650",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "cb8cc44f-c303-4aad-a399-904968d8d36c"
+                }
+            ],
+            "primeLineNo": 19,
+            "taxExemptions": [],
+            "itemHeightMeasure": "9.2",
+            "itemDepthMeasure": "15.6",
+            "itemWidthMeasure": "0.275",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138825833401313380",
+            "omniItemId": "1000126013",
+            "itemNumber": "790022",
+            "model": "KLC 2224A-03",
+            "vendor": "11241",
+            "brand": "Kobalt",
+            "itemDescription": "2-Tool 24-Volt Max Brushless Power Tool Combo Kit with Soft Case (1-Battery Included and Charger Included)",
+            "shortDescription": "K 24V BL 2-TOOL HMR DRL AND IMPA",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 12.885,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 279.00,
+                "unitCost": 181.79,
+                "prices": [
+                    {
+                        "type": "RETAIL",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 181.79
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 279.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 279.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 3461,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "ADC",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/0869ec3a-22e1-4726-8733-0de1a8d2fec8/07696108.jpg",
+            "cartItemSummary": {
+                "subTotal": 279.00,
+                "totalPrice": 307.61,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 28.61,
+                        "itemNbr": "790022",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 279.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "COMBO_KITS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:17:38.334Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": true,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443279",
+                    "locationId": "3461",
+                    "itemNbr": "790022",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "127d9145-d296-499b-b8a7-6fc554be1c0a"
+                }
+            ],
+            "primeLineNo": 2,
+            "taxExemptions": [],
+            "itemHeightMeasure": "10.43",
+            "itemDepthMeasure": "12.8",
+            "itemWidthMeasure": "10.14",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138883949382311580",
+            "omniItemId": "999960275",
+            "itemNumber": "757585",
+            "model": "30112L",
+            "vendor": "695",
+            "brand": "interDesign",
+            "itemDescription": "Plastic Freestanding Sink Caddy",
+            "shortDescription": "CLEAR SOAP SAVER",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 0.09,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 27,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 1.60,
+                "unitCost": 0.49,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.49
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 1.60
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 1.60
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-20T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 4317,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "DFC",
+                        "shipDate": "2023-04-14T01:30:00Z",
+                        "routingID": "FDXLEB",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "receiptDate": "2023-04-20T07:00:00Z",
+                        "availabilityDate": "2023-04-20T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/3be65259-9748-481a-91ec-dac72770349c/00615913.jpg",
+            "cartItemSummary": {
+                "subTotal": 1.60,
+                "totalPrice": 1.76,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 0.16,
+                        "itemNbr": "757585",
+                        "taxPercentage": 10.10,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 1.60,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SINK_CADDIES"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:27:19.493Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443277",
+                    "locationId": "4317",
+                    "itemNbr": "757585",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "7e94f539-f802-461a-b00f-81dd8463584b"
+                }
+            ],
+            "primeLineNo": 23,
+            "taxExemptions": [],
+            "itemHeightMeasure": "6.3",
+            "itemDepthMeasure": "0.7",
+            "itemWidthMeasure": "3.2",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388535909151193197",
+            "omniItemId": "4762637",
+            "itemNumber": "498163",
+            "model": "85907210630",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Ocean Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS Ocean Small Polka Dot Small P",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 31.98,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 31.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "procurementNode": "49084",
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.60,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.60,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/5208488d-3e92-489e-8bda-637d289b4419/02882900.jpg",
+            "cartItemSummary": {
+                "subTotal": 31.98,
+                "totalPrice": 33.50,
+                "discount": 1.60,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 3.12,
+                        "itemNbr": "498163",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 30.38,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.60,
+                "totalSavingsByUnit": 1.60,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:22:15.909Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443282",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "153c1e01-dad6-42ef-8577-be85bf7c915c",
+                    "modelID": "85907210630",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 17,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138843945831678918",
+            "omniItemId": "4762637",
+            "itemNumber": "498163",
+            "model": "85907210630",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Ocean Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS Ocean Small Polka Dot Small P",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 31.98,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 31.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.60,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.60,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/5208488d-3e92-489e-8bda-637d289b4419/02882900.jpg",
+            "cartItemSummary": {
+                "subTotal": 31.98,
+                "totalPrice": 33.49,
+                "discount": 1.60,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 3.11,
+                        "itemNbr": "498163",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 30.38,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.60,
+                "totalSavingsByUnit": 1.60,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:20:39.458Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637598",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "81654919-685e-40d9-ae22-ee36da98ad97",
+                    "modelID": "85907210630",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 6,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138853352957829141",
+            "omniItemId": "4762637",
+            "itemNumber": "498163",
+            "model": "85907210630",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Ocean Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS Ocean Small Polka Dot Small P",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 31.98,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 31.98
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 31.98
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.60,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.60,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/5208488d-3e92-489e-8bda-637d289b4419/02882900.jpg",
+            "cartItemSummary": {
+                "subTotal": 31.98,
+                "totalPrice": 33.50,
+                "discount": 1.60,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 3.12,
+                        "itemNbr": "498163",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 30.38,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.60,
+                "totalSavingsByUnit": 1.60,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:22:13.529Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443275",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "88dbbf31-b795-4f62-b10e-db0e63951fc4",
+                    "modelID": "85907210630",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 16,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "168138846487812580715",
+            "omniItemId": "50107504",
+            "itemNumber": "133",
+            "model": "BP40T612RP",
+            "vendor": "75774",
+            "brand": "Feit Electric",
+            "itemDescription": "5.375-in T6.5 Soft White Dimmable Appliance",
+            "shortDescription": "FEIT 40 W T6 1/2 TUBE INTR MED BS",
+            "itemStockType": "STK",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "hazmatClassCode": "N",
+            "quantity": 1,
+            "itemWeight": 0.11,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 1,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 112.00,
+                "unitCost": 0.67,
+                "prices": [
+                    {
+                        "type": "ITEMCOST",
+                        "value": 0.67
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 112.00
+                    },
+                    {
+                        "type": "BASE",
+                        "value": 112.00
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-13T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-13T07:00:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/eb7affbb-6baa-4b15-bbfa-e5197fc0ed3d/00553177.jpg",
+            "cartItemSummary": {
+                "subTotal": 112.00,
+                "totalPrice": 123.48,
+                "discount": 0,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 11.48,
+                        "itemNbr": "133",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 112.00,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 0,
+                "totalSavingsByUnit": 0,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "SPECIALTY_LIGHT_BULBS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:21:04.879Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584654443278",
+                    "locationId": "6557",
+                    "itemNbr": "133",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "2c579482-ef6a-4eea-8d34-2784f6d30ef6"
+                }
+            ],
+            "primeLineNo": 8,
+            "taxExemptions": [],
+            "itemHeightMeasure": "18.1",
+            "itemDepthMeasure": "0.23",
+            "itemWidthMeasure": "11.45",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        },
+        {
+            "cartItemId": "1681388509710820630924",
+            "omniItemId": "4762679",
+            "itemNumber": "498196",
+            "model": "85907210629",
+            "vendor": "49084",
+            "brand": "Majestic Home Goods",
+            "itemDescription": "12-in x 20-in Aquamarine Polyester and Cotton Twill Indoor Decorative Pillow",
+            "shortDescription": "SOS AQUAMRN POLKA DOT PILLOW RECT",
+            "sosFreightType": "PRE_PAID",
+            "itemStockType": "SOS",
+            "itemType": "RGL",
+            "hazmatTypeCode": "RGL",
+            "quantity": 1,
+            "itemWeight": 2.0,
+            "freeDetail": false,
+            "freeLead": false,
+            "freeMileage": false,
+            "priceInfo": {
+                "priceType": 0,
+                "priceInfoUsageType": "SELLING",
+                "priceInfoDisplayType": "REGULAR",
+                "totalPercentage": 0.0,
+                "unitPrice": 28.48,
+                "unitCost": 24.00,
+                "prices": [
+                    {
+                        "type": "BASE",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "ITEMCOST",
+                        "value": 24.00
+                    },
+                    {
+                        "type": "RETAIL",
+                        "value": 28.48
+                    },
+                    {
+                        "type": "FINAL",
+                        "value": 28.48
+                    }
+                ],
+                "saveComponents": []
+            },
+            "selectedFulfillment": {
+                "availabilityTime": "2023-04-16T07:00:00Z",
+                "estimatedDeliveryDate": "2023-04-21T12:00:00Z",
+                "estimatedShipDate": "2023-04-21T07:00:00Z",
+                "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+                "fulfillmentId": "3",
+                "fulfillmentType": "TRUCK",
+                "fulfillmentNode": {
+                    "storeId": "6557",
+                    "name": "TEST 6557 Rainier Lowe'\''s",
+                    "address": {
+                        "addressType": "COMMERCIAL",
+                        "addressLine1": "2700 RAINIER AVENUE SOUTH",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "zipCode": "98144",
+                        "country": "US",
+                        "phone": "2067600832",
+                        "valid": true
+                    }
+                },
+                "shippingAddress": {
+                    "addressGroupId": "TEMP_j1vxim",
+                    "addressType": "COMMERCIAL",
+                    "addressTypeCode": "RA",
+                    "firstName": "Sailesh",
+                    "lastName": "Patra",
+                    "companyName": "",
+                    "addressLine1": "100 14TH AVE S",
+                    "addressLine2": "",
+                    "city": "SEATTLE",
+                    "state": "WA",
+                    "zipCode": "98144",
+                    "country": "US",
+                    "phone": "9853164386",
+                    "email": "commsorbittest@gmail.com",
+                    "taxGeoCode": "00",
+                    "taxAreaId": "480330650",
+                    "valid": true
+                },
+                "selectedShippingOption": {
+                    "shippingOptionType": "STANDARD",
+                    "shippingCharge": 66.67,
+                    "psuedoItemNumber": "2"
+                },
+                "ltlIdentifier": false,
+                "fullPath": [
+                    {
+                        "pathSequence": 2,
+                        "pathLctNbr": 6557,
+                        "sourcedQty": 0,
+                        "pathLctCompany": "lowes",
+                        "pathLctType": "store",
+                        "availabilityDate": "2023-04-16T07:00:00Z",
+                        "isATP": false
+                    },
+                    {
+                        "pathSequence": 1,
+                        "pathLctNbr": 49084,
+                        "sourcedQty": 1,
+                        "pathLctCompany": "vendor",
+                        "pathLctType": "vendor",
+                        "shipDate": "2023-04-14T06:59:00Z",
+                        "isATP": false
+                    }
+                ],
+                "parcelDates": [],
+                "nodeType": "store",
+                "resourceType": "Box Truck"
+            },
+            "promotions": [
+                {
+                    "promotionId": "2744794958140229812",
+                    "promotionName": "single tier: ExtCategoryLevelPercentDiscount",
+                    "promotionType": "ExtCategoryLevelPercentDiscount",
+                    "description": "single tier: ExtCategoryLevelPercentDiscount",
+                    "shortDescription": "Instant Savings",
+                    "promotionCategory": "ProductLevelPromotion",
+                    "discount": 1.42,
+                    "startDateTime": "2021-06-07T20:00:00Z",
+                    "endDateTime": "9999-12-31T18:59:59Z",
+                    "amountSavedPerUnit": 1.42,
+                    "chargeCategory": "CategoryLevelSpendXG",
+                    "promoCode": "470000000013128",
+                    "chargeName": "CategoryLevelSpendXGetPercentageDiscount",
+                    "promotionGroupCode": "ProductLevelPromotion"
+                }
+            ],
+            "oesSpecialPromotions": [],
+            "imageUrl": "/productimages/21c7551b-b6bd-474e-9d20-2c155889c321/02882877.jpg",
+            "cartItemSummary": {
+                "subTotal": 28.48,
+                "totalPrice": 29.84,
+                "discount": 1.42,
+                "totalFees": 0,
+                "fees": [],
+                "taxes": [
+                    {
+                        "type": "SALES",
+                        "name": "LWS_SALES_TAX",
+                        "value": 2.78,
+                        "itemNbr": "498196",
+                        "taxPercentage": 10.25,
+                        "fees": []
+                    }
+                ],
+                "subTotalAfterDisc": 27.06,
+                "totalMarkDownSaving": 0.00,
+                "totalSavings": 1.42,
+                "totalSavingsByUnit": 1.42,
+                "unlockDiscount": 0.00
+            },
+            "personnelNbr": "113174",
+            "installationPickUpType": "N",
+            "categories": [
+                "ACCENT_PILLOWS"
+            ],
+            "priceLockIndicator": false,
+            "deliveryId": "731413468~1",
+            "createdTime": "2023-04-13T12:21:49.71Z",
+            "interPackCode": "EA",
+            "sosFlip": false,
+            "liveGood": false,
+            "eppEligible": false,
+            "reservationDetails": [
+                {
+                    "reservationID": "7052256584658637601",
+                    "locationId": "49084",
+                    "quantity": 1,
+                    "demandType": "OPEN",
+                    "lceReferenceID": "f5aae0c1-db11-4104-9f8b-7da587210152",
+                    "modelID": "85907210629",
+                    "vbuNumber": "49084"
+                }
+            ],
+            "primeLineNo": 12,
+            "taxExemptions": [],
+            "itemHeightMeasure": "12.000",
+            "itemDepthMeasure": "20.000",
+            "itemWidthMeasure": "5.000",
+            "isApplianceKit": false,
+            "vspApplied": false,
+            "isFastTrack": false,
+            "isFreeItem": false,
+            "pcrItemParent": false,
+            "pcrItemChild": false,
+            "multiPuis": false
+        }
+    ],
+    "zippedInStore": {
+        "storeId": "6557",
+        "name": "TEST 6557 Rainier Lowe'\''s",
+        "address": {
+            "addressGroupId": "1681388232868139993653",
+            "addressType": "COMMERCIAL",
+            "addressTypeCode": "RA",
+            "addressLine1": "2700 RAINIER AVENUE SOUTH",
+            "city": "Seattle",
+            "state": "WA",
+            "zipCode": "98144",
+            "country": "US",
+            "phone": "2067600832",
+            "valid": true
+        },
+        "carbonStoreId": "6557"
+    },
+    "billingAddress": {
+        "addressGroupId": "TEMP_j1vxim",
+        "addressType": "COMMERCIAL",
+        "firstName": "Sailesh",
+        "lastName": "Patra",
+        "companyName": "",
+        "addressLine1": "100 14TH AVE S",
+        "addressLine2": "",
+        "city": "SEATTLE",
+        "state": "WA",
+        "zipCode": "98144",
+        "country": "US",
+        "phone": "9853164386",
+        "email": "commsorbittest@gmail.com",
+        "valid": true
+    },
+    "payments": [
+        {
+            "paymentId": "MC_545454WKOAFW5454",
+            "amount": 1719.65,
+            "cardType": "MASTERCARD",
+            "transactionType": "REGULAR",
+            "cardToken": "545454WKOAFW5454",
+            "displayText": "***5454",
+            "expirationMonth": "12",
+            "expirationYear": "2023",
+            "accountType": "CREDIT",
+            "reversalId": "171965XX746940XX199353XXA0001993530413AXX171965XX",
+            "returnCode": "9013",
+            "authStatus": "Approved",
+            "sequenceNumber": "639187746940",
+            "cardReceiveCode": "3",
+            "transactionId": "0001993530413",
+            "posIdentificationCode": "3",
+            "netReturnCode": "00",
+            "authorizationCode": "199353",
+            "prepaidBalance": "0",
+            "merchantId": "700000007433",
+            "retRefNumber": "122954090787",
+            "avsResponse": "N",
+            "masterCardClassificationId": "U0",
+            "paymentServiceFlag": "A",
+            "offlineAuthorization": false,
+            "savedCard": false,
+            "addingCard": false,
+            "cvvPresent": false,
+            "authSource": "5",
+            "attachedTime": "2023-04-13T12:29:53.204Z",
+            "reason": "Approved authorization / transaction",
+            "idRequiredIndicator": false,
+            "verificationStatus": false
+        }
+    ],
+    "appliedCoupons": [
+        {
+            "couponCode": "470000000013128",
+            "promotionId": "2744794958140229812"
+        }
+    ],
+    "promotions": [
+        {
+            "promotionId": "2680332968633126738",
+            "promotionName": "Easter Delivery promo",
+            "promotionType": "ExtCategoryLevelFixedShippingDiscount",
+            "promotionCategory": "ShippingPromotion",
+            "discount": 66.67,
+            "shipGroupKey": "DELIVERY_16813889788127710531",
+            "startDateTime": "2023-03-24T03:00:00Z",
+            "endDateTime": "2023-04-30T03:00:00Z",
+            "chargeCategory": "FREE DELIVERY",
+            "chargeName": "FREE DELIVERY",
+            "promotionGroupCode": "ShippingPromotion",
+            "deliveryId": "731413607~1"
+        }
+    ],
+    "personnelNbr": "113173",
+    "contactInformation": {
+        "phone": "9853164386",
+        "email": "commsorbittest@gmail.com",
+        "preferredPhoneIndicator": false,
+        "preferredEmailIndicator": false
+    },
+    "currency": "USD",
+    "cartSummary": {
+        "grandTotal": 1719.65,
+        "subTotal": 1571.85,
+        "subTotalWithFees": 1559.77,
+        "totalSavings": 78.75,
+        "totalSavingWithoutShippingPromotions": 12.08,
+        "totalfees": 0,
+        "fees": [],
+        "deliveryCharge": 66.67,
+        "deliveryChargeAfterDiscount": 0.00,
+        "totalSalesTax": 159.88,
+        "subTotalWithDiscount": 1559.77,
+        "mileageFee": 0,
+        "totalTax": 159.88,
+        "remainingOrderBalance": 1719.65,
+        "totalMarkDownSaving": 0.00,
+        "totalUnlockSaving": 0.00
+    },
+    "shipGroupCharges": [
+        {
+            "chargeName": "TEMP_j1vxim",
+            "chargeCategory": "LWS_DELIVERY_CHARGE",
+            "shipChargeGroupKey": "DELIVERY_16813889788127710531",
+            "shopKeyCode": "LOWES",
+            "psuedoItemNumber": "2",
+            "shipCharge": 66.67,
+            "shipChargeAfterDiscount": 0.00,
+            "shipTax": 0.00,
+            "shippingOptionType": "STANDARD"
+        }
+    ],
+    "fraudStatus": "ACCEPT",
+    "itemCount": 27,
+    "detailFeeTnCAccepted": true,
+    "created": "2023-04-13T12:17:12.868Z",
+    "lastUpdated": "2023-04-13T12:29:53.21Z",
+    "orderSubmittedOn": "2023-04-13T12:29:54.693Z",
+    "oesSpecialCoupons": [],
+    "msgDeliveryUpdates": false,
+    "scheduleDeliveryAppointments": [
+        {
+            "fulfillmentNode": "6557",
+            "resourceType": "Box Truck",
+            "deliveryCharge": 0,
+            "deliveryTax": 0,
+            "totalDeliveryCharge": 0,
+            "deliveryId": "731413468~1",
+            "appointment": {
+                "appointmentId": "cd181be4-fdff-45a0-8bd0-01f7f4829515",
+                "appointmentWindowBegin": "2023-04-21T08:00:00-04:00",
+                "appointmentWindowEnd": "2023-04-21T20:00:00-04:00",
+                "taskDuration": 148,
+                "travelDuration": 113,
+                "customerLocationTaskDuration": 35
+            },
+            "mappedWithFreeDelivery": false
+        },
+        {
+            "fulfillmentNode": "7348",
+            "resourceType": "Box Truck",
+            "deliveryCharge": 66.67,
+            "deliveryTax": 0.00,
+            "totalDeliveryCharge": 66.67,
+            "deliveryId": "731413607~1",
+            "appointment": {
+                "appointmentId": "fd7decba-5f40-4ee9-bcdb-a2f770e8a4d7",
+                "appointmentWindowBegin": "2023-04-14T08:00:00-04:00",
+                "appointmentWindowEnd": "2023-04-14T20:00:00-04:00",
+                "taskDuration": 55,
+                "travelDuration": 20,
+                "customerLocationTaskDuration": 35
+            },
+            "mappedWithFreeDelivery": true
+        }
+    ],
+    "extnIsFullAuthOrder": true,
+    "aopEnabled": false,
+    "taxExempt": false,
+    "taxExemptOptIn": false,
+    "recurring": false,
+    "taxExemptions": [],
+    "chargeFeeUnlock": [],
+    "issueBopuisCoupon": false,
+    "prorationRequired": false,
+    "upgradedUser": false
+}'
