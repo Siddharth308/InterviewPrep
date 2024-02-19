@@ -1,102 +1,104 @@
-1. How to import css in HTML
-    a. inline: <h1 style="color:blue;">A Blue Heading</h1>
-    b. Internal CSS
-        <!DOCTYPE html>
-        <html>
-                <head>
-                    <style>
-                        body {background-color: powderblue;}
-                        h1   {color: blue;}
-                        p    {color: red;}
-                    </style>
-                </head>
-            <body>
+### 1. How to import css in HTML
 
-                <h1>This is a heading</h1>
-                <p>This is a paragraph.</p>
+<Details>
+    <Summary>Answer</Summary>
+    ```txt
 
-            </body>
+        a. inline: <h1 style="color:blue;">A Blue Heading</h1>
+        b. Internal CSS
+
+                <!DOCTYPE html>
+                    <html>
+                     <head>
+                        <style>
+                            body {background-color: powderblue;}
+                            h1 {color: blue;}
+                            p {color: red;}
+                        </style>
+                    </head>
+                <body>
+
+                    <h1>This is a heading</h1>
+                    <p>This is a paragraph.</p>
+
+                </body>
         </html>
 
-    c. External: 
-            <head>
-                <link rel="stylesheet" href="styles.css">
-            </head>
 
-2. How to import javascript?
+    c. External:
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    ```
+
+</Details>
+
+2.  How to import javascript?
 <script src="myscripts.js"></script>
-Best Practices for Importing JavaScript
 
-    1. Placement: It's recommended to place the <script> tag just before the closing </body> tag to improve the loading time of web pages.
+### 3. How a HTML file renders in browser? Critical Rendering Path Flow.
 
-    2. Async and Defer Attributes: Use the async or defer attributes when linking to external JavaScript files to control script loading behavior and improve page performance.
-html
-
-# Let's create a text file with the explanation on how an HTML file renders in a browser
-
-content = """
-How a HTML File Renders in a Browser?
+<details>
+<summary>Answer</summary>
 
 The process of rendering an HTML file in a browser involves several steps, converting the raw HTML, CSS, and JavaScript code into the visual and interactive web page you see on your screen. Understanding this process is crucial for web developers aiming to optimize performance and ensure compatibility across different browsers.
 
-1. Parsing the HTML Document:
+#### 1. Parsing the HTML Document
+
 - The browser starts by parsing the raw HTML file into a Document Object Model (DOM) tree. The DOM tree represents the structure of the document as a hierarchy of objects.
-- Each element (tags like <html>, <body>, <div>, etc.) becomes a node in the DOM tree.
+- Each element (tags like `<html>`, `<body>`, `<div>`, etc.) becomes a node in the DOM tree.
 
-2. Processing CSS:
+#### 2. Processing CSS
+
 - While the DOM is being constructed, the browser also parses any linked or embedded CSS into the CSS Object Model (CSSOM) tree. This tree represents the styling information for the page.
-- External CSS files and styles within <style> tags are processed to understand how elements should be displayed.
+- External CSS files and styles within `<style>` tags are processed to understand how elements should be displayed.
 
-3. Combining DOM and CSSOM to Construct the Render Tree:
+#### 3. Combining DOM and CSSOM to Construct the Render Tree
+
 - The browser then combines the DOM and CSSOM into a Render Tree, which contains only the objects that will be visible on the page, along with their computed styles.
 - The Render Tree is crucial for the next steps, as it informs the browser exactly how to display the page's content.
 
-4. Layout Calculation (Reflow):
+#### 4. Layout Calculation (Reflow)
+
 - Once the Render Tree is constructed, the browser performs a "layout" process, where it calculates the exact position and size of each object on the screen. This process is often referred to as Reflow.
 - The layout takes into account the viewport size, elements' dimensions, and how they interact with each other (e.g., margins, padding).
 
-5. Painting (Repaint):
+#### 5. Painting (Repaint)
+
 - Painting is the process where the layout's visual information (colors, images, borders) is actually drawn on the screen.
 - The browser goes through the Render Tree and paints each node using the UI backend layer.
 
-6. Compositing:
+#### 6. Compositing
+
 - Complex pages might require layers that need to be painted separately and then composited together. This step is especially important for elements that overlap or for operations like CSS animations.
 - Compositing ensures that the page is rendered efficiently, and animations or transitions are smooth.
 
-Real Scenario Example:
+#### Real Scenario Example
+
 Imagine loading a simple blog page. Here's a simplified view of how it renders:
 
-1. Parsing HTML: The browser reads the HTML code, creating a DOM tree structure representing the page's layout.
-2. Processing CSS: Simultaneously, CSS files are parsed to understand how the elements should look, resulting in the CSSOM tree.
-3. Render Tree Construction: The DOM and CSSOM are combined to form the Render Tree, determining visible elements and their styles.
-4. Layout/Reflow: The browser calculates where each element should appear on the screen and their sizes.
-5. Painting/Repaint: Each element's visual styles are applied, coloring and shaping the blog page.
-6. Compositing: Elements are layered correctly to ensure proper display and interaction, including any dynamic effects or animations.
+1. **Parsing HTML**: The browser reads the HTML code, creating a DOM tree structure representing the page's layout.
+2. **Processing CSS**: Simultaneously, CSS files are parsed to understand how the elements should look, resulting in the CSSOM tree.
+3. **Render Tree Construction**: The DOM and CSSOM are combined to form the Render Tree, determining visible elements and their styles.
+4. **Layout/Reflow**: The browser calculates where each element should appear on the screen and their sizes.
+5. **Painting/Repaint**: Each element's visual styles are applied, coloring and shaping the blog page.
+6. **Compositing**: Elements are layered correctly to ensure proper display and interaction, including any dynamic effects or animations.
 
-Summary:
+#### Summary
+
 - Rendering an HTML file in a browser is a complex process that transforms code into a visual and interactive experience.
 - This process includes parsing the HTML and CSS, constructing the DOM and CSSOM, combining them into the Render Tree, calculating layout, painting the elements, and compositing layers for final display.
 - Understanding these steps helps developers optimize for performance and ensure their web pages render correctly across different devices and browsers.
-"""
 
-# Define the file path
-file_path = '/mnt/data/how_html_renders_in_browser.txt'
+</details>
 
-# Write the content to the file
-with open(file_path, 'w') as file:
-    file.write(content)
+4.  Best place to import a script file in HTML
 
-# Return the file path for download
-file_path
+5.  script async vs defer?
 
+6.  Difference between HTML5 vs HTML4?
 
-4. Best place to import a script file in HTML
-
-5. script async vs defer?
-
-6. Difference between HTML5 vs HTML4?
-
-7. <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7.  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
 
@@ -128,14 +130,14 @@ file_path
     </body>
     </html>
 
-8. Mobile first design
-    /* For mobile phones: */
+8.  Mobile first design
+    /_ For mobile phones: _/
     [class*="col-"] {
     width: 100%;
     }
 
     @media only screen and (min-width: 768px) {
-    /* For desktop: */
+    /_ For desktop: _/
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -150,7 +152,7 @@ file_path
     .col-12 {width: 100%;}
     }
 
-9. How DNS Lookup works? https://www.javatpoint.com/dns-lookup
+9.  How DNS Lookup works? https://www.javatpoint.com/dns-lookup
     Users open a web browser, enter com in the address bar, and presses Enter button.
     The request, for example.com is routed to a DNS resolver, which manages by the user's Internet service provider.
     The DNS resolver forwards the request, for example.com to a root DNS server.
@@ -165,4 +167,8 @@ file_path
 
 11. Atomic design pattern
 
-12. How to make images responsive 
+12. How to make images responsive
+
+```
+
+```

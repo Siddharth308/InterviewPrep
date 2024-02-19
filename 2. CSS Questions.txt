@@ -1,93 +1,103 @@
 // CSS
 
 1. CSS Selectors:
-    a. Descendent: div a : All nested <a> tag inside div
-    b. Direct Child: div > a : Not all nested, but only the direct Child
-    c. General Sibling: div ~ a : a(ns) div a(s) a(s)
-    d. Adjacent Sibling: div + a : a(s) div a(s)
-    e. Or selector: div, a : all div tags & a tags
-    f. And selecor: div.c : All divs with c class
+   a. Descendent: div a : All nested <a> tag inside div
+   b. Direct Child: div > a : Not all nested, but only the direct Child
+   c. General Sibling: div ~ a : a(ns) div a(s) a(s)
+   d. Adjacent Sibling: div + a : a(s) div a(s)
+   e. Or selector: div, a : all div tags & a tags
+   f. And selecor: div.c : All divs with c class
 
-2. Diff between pasedo element & pseudo class
+### 2. Let's understand pseudo classes and pseudo elements?
 
-3. Pseudo element:
+<details>
+<summary>Pseudo classes and pseudo elements are concepts in CSS for styling document parts based on state or structure without extra classes or IDs. Pseudo classes define a special state of an element (like :hover, :focus, :first-child), allowing style changes based on user interaction or position among siblings. Pseudo elements (like ::before, ::after, ::first-line, ::first-letter) style specific parts of an element, such as content before or after an element's main content, targeting text's first line or letter.</summary>
+
+Pseudo classes and pseudo elements offer dynamic styling options. For instance, using `:hover` can change link colors on mouse-over, and `::before` can add content before an element, like quotes around a blockquote. These features enhance design without extra HTML, crucial for responsive and interactive web elements.
+
+</details>
+<details>
+    <summary>**Pseudo Classes**: Target specific states of an element (`:hover`, `:focus`, `:first-child`). **Pseudo Elements**: Style parts of an element (`::before`, `::after`, `::first-line`, `::first-letter`). Use `:` for pseudo classes and `::` for pseudo elements. Practice and staying updated with CSS advancements are key for mastery.</summary>
+</details>
+
+3.  Pseudo element:
     div::before - Creates an empty element directly before the children of selected element(div)
     div::after - Creates an empty element directly after the children of selected element(div)
 
-    It is often used to add cosmetic content to an element with the content property. 
-    
-    It is inline by default.
-    
-    If the content property is not specified, has an invalid value, or has normal or none as a value, 
-    then the ::before pseudo-element is not rendered. It behaves as if display: none is set.
-    
-    example:
-        .local-link::before {
-            content: url('../../media/examples/firefox-logo.svg');
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            margin-right: 5px;
-        }
+    It is often used to add cosmetic content to an element with the content property.
 
-4. Pseudo Class:
+    It is inline by default.
+
+    If the content property is not specified, has an invalid value, or has normal or none as a value,
+    then the ::before pseudo-element is not rendered. It behaves as if display: none is set.
+
+    example:
+    .local-link::before {
+    content: url('../../media/examples/firefox-logo.svg');
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    }
+
+4.  Pseudo Class:
     button:hover{ styling }
     :focus, :disabled, :required, :first-child, :last-child
 
-5. CSS Box model:
+5.  CSS Box model:
     Includes content, padding, border, margin.
 
-6. Property to configure CSS Box model: box-sizing
+6.  Property to configure CSS Box model: box-sizing
 
-7. Default property of box-sizing: content-box
+7.  Default property of box-sizing: content-box
     where css width is width of content.
     Padding & Border are extra
 
     .box {
-        width: 350px;
-        height: 150px;
-        margin: 10px;
-        padding: 25px;
-        border: 5px solid black;
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
     }
-    
+
     The actual space taken up by the box will be 410px wide (350 + 25 + 25 + 5 + 5) and 210px high (150 + 25 + 25 + 5 + 5).
 
-8. box-sizing: border-box:
+8.  box-sizing: border-box:
     .box {
-        width: 350px;
-        inline-size: 350px;
-        height: 150px;
-        block-size: 150px;
-        margin: 10px;
-        padding: 25px;
-        border: 5px solid black;
+    width: 350px;
+    inline-size: 350px;
+    height: 150px;
+    block-size: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
     }
     Now, the actual space taken up by the box will be 350px in the inline direction and 150px in the block direction.
 
-9. CSS Positioning: What re different values of position property?
+9.  CSS Positioning: What re different values of position property?
     a. static (default):
-        HTML elements are positioned static by default.
-        Static positioned elements are not affected by the top, bottom, left, and right properties.
+    HTML elements are positioned static by default.
+    Static positioned elements are not affected by the top, bottom, left, and right properties.
 
-    b. relative: 
-        An element with position: relative; is positioned relative to its normal position.
+    b. relative:
+    An element with position: relative; is positioned relative to its normal position.
 
-        Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be 
+        Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be
         adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
-    
+
     c. fixed:
-        An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
-        The top, right, bottom, and left properties are used to position the element.
+    An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+    The top, right, bottom, and left properties are used to position the element.
 
     d. absolute:
-        An element with position: absolute; is positioned to the nearest relative positioned ancestor 
-        (instead of positioned relative to the viewport, like fixed).
+    An element with position: absolute; is positioned to the nearest relative positioned ancestor
+    (instead of positioned relative to the viewport, like fixed).
 
     e. sticky:
-        An element with position: sticky; is positioned based on the user's scroll position.
+    An element with position: sticky; is positioned based on the user's scroll position.
 
-        A sticky element toggles between relative and fixed, depending on the scroll position. 
+        A sticky element toggles between relative and fixed, depending on the scroll position.
         It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
 
 10. static & relative keep their natural space in flow of the document. absolute & fixed doesn't.
@@ -95,38 +105,38 @@
 11. CSS Specificity Order:
 
     From low to high priority:
-        a. Universal selector: (*)
-        b. Element selector : p, div etc
-        c. Class selector
-        d. ID selector
-        e. Inline style
-        f. Declarations marked !important
+    a. Universal selector: (\*)
+    b. Element selector : p, div etc
+    c. Class selector
+    d. ID selector
+    e. Inline style
+    f. Declarations marked !important
 
 12. display properties:
-    a. inline (default): Displays an element as an inline element (like <span>). Any height and width properties will have no effect. This is default.	
-    b. block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	
+    a. inline (default): Displays an element as an inline element (like <span>). Any height and width properties will have no effect. This is default.
+    b. block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
 
     c. inline-block: https://www.w3schools.com/css/css_inline-block.asp
-        Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+    Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
 
         Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
 
-        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, 
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element,
         so the element can sit next to other elements.
 
 13. Difference between display: none & visibility: hidden:
-        visibility:hidden hides the element, but it still takes up space in the layout.
+    visibility:hidden hides the element, but it still takes up space in the layout.
 
         display:none removes the element from the document. It does not take up any space in DOM.
 
 14. How to build layouts in CSS?
 
 15. What are disadvantages of float:
-        The float property specifies whether an element should float to the left, right, or not at all.
+    The float property specifies whether an element should float to the left, right, or not at all.
 
         Note: Absolutely positioned elements ignore the float property!
 
-        Note: Elements next to a floating element will flow around it. 
+        Note: Elements next to a floating element will flow around it.
         To avoid this, use the clear property or the clearfix hack (see example at the bottom of this page).
 
         <div class="clearfix">
@@ -157,34 +167,35 @@
     </div>
 
     .container {
-        width: 500px;
-        height: 250px;
-        margin: 50px;
-        outline: solid 1px black;
+    width: 500px;
+    height: 250px;
+    margin: 50px;
+    outline: solid 1px black;
     }
 
     .circle {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
     }
 
     Solution 1:
     .container {
-       
+
         Add the following to container
 
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
-    Solution 2: 
+    Solution 2:
 
     .circle{
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     Solution 3:
@@ -204,42 +215,41 @@
         flex-wrap: wrap | no-wrap(default) : The flex-wrap property specifies whether the flex items should wrap or not.
         flex-flow: flex-direction flex-wrap;
         justify-content:
-            flex-start	Default value. Items are positioned at the beginning of the container	
-            flex-end	Items are positioned at the end of the container	
-            center	Items are positioned in the center of the container	
-            space-between	Items will have space between them	
-            space-around	Items will have space before, between, and after them	
-            space-evenly	Items will have equal space around them	
-            initial	Sets this property to its default value. Read about initial	
+            flex-start	Default value. Items are positioned at the beginning of the container
+            flex-end	Items are positioned at the end of the container
+            center	Items are positioned in the center of the container
+            space-between	Items will have space between them
+            space-around	Items will have space before, between, and after them
+            space-evenly	Items will have equal space around them
+            initial	Sets this property to its default value. Read about initial
             inherit
         align-items
-            normal	Default. Behaves like 'stretch' for flexbox and grid items, or 'start' for grid items with a defined block size.	
-            stretch	Items are stretched to fit the container	
-            center	Items are positioned at the center of the container	
-            flex-start	Items are positioned at the beginning of the container	
-            flex-end	Items are positioned at the end of the container	
-            start	Items are positioned at the beginning of their individual grid cells, in the block direction	
-            end	Items are positioned at the end of the their individual grid cells, in the block direction	
-            baseline	Items are positioned at the baseline of the container	
-            initial	Sets this property to its default value. Read about initial	
-            inherit	Inherits this property from its parent element. Read about inherit	
-        align-content
-            stretch	Default value. Lines stretch to take up the remaining space	
-            center	Lines are packed toward the center of the flex container	
-            flex-start	Lines are packed toward the start of the flex container	
-            flex-end	Lines are packed toward the end of the flex container	
-            space-between	Lines are evenly distributed in the flex container	
-            space-around	Lines are evenly distributed in the flex container, with half-size spaces on either end	
-            space-evenly	Lines are evenly distributed in the flex container, with equal space around them	
-            initial	Sets this property to its default value. Read about initial	
+            normal	Default. Behaves like 'stretch' for flexbox and grid items, or 'start' for grid items with a defined block size.
+            stretch	Items are stretched to fit the container
+            center	Items are positioned at the center of the container
+            flex-start	Items are positioned at the beginning of the container
+            flex-end	Items are positioned at the end of the container
+            start	Items are positioned at the beginning of their individual grid cells, in the block direction
+            end	Items are positioned at the end of the their individual grid cells, in the block direction
+            baseline	Items are positioned at the baseline of the container
+            initial	Sets this property to its default value. Read about initial
             inherit	Inherits this property from its parent element. Read about inherit
-
+        align-content
+            stretch	Default value. Lines stretch to take up the remaining space
+            center	Lines are packed toward the center of the flex container
+            flex-start	Lines are packed toward the start of the flex container
+            flex-end	Lines are packed toward the end of the flex container
+            space-between	Lines are evenly distributed in the flex container
+            space-around	Lines are evenly distributed in the flex container, with half-size spaces on either end
+            space-evenly	Lines are evenly distributed in the flex container, with equal space around them
+            initial	Sets this property to its default value. Read about initial
+            inherit	Inherits this property from its parent element. Read about inherit
 
 19. CSS Grid:
     .grid-container{
-        display: grid;
-        grid-template-columns: 200px 200px 100px 100px;
-        grid-template-rows: 300px 200px;
-        column-gap: 30px;
-        row-gap: 60px;
+    display: grid;
+    grid-template-columns: 200px 200px 100px 100px;
+    grid-template-rows: 300px 200px;
+    column-gap: 30px;
+    row-gap: 60px;
     }
