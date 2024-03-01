@@ -1,0 +1,7 @@
+.star {
+  color: gray;
+  cursor: pointer;
+}
+.star.filled {
+  color: gold;
+}
